@@ -12,7 +12,7 @@ For the new project, in the `Project` tab in the left panel, click on `Add image
 
 ### Displaying individual image channels
 
-Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autoflourescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar to toggle only the DAPI channel in the viewport:
+Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autofluorescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar to toggle only the DAPI channel in the viewport:
 
 ![](images/screenshot_brightness_contrast1.png?raw=true "Screenshot")
 
@@ -34,7 +34,7 @@ The Brush tool in QuPath can be used to further refine an annotation to, for ins
 
 To try this, make sure the annotation for the core is selected (is highlighted in yellow); you can select an annotation by `Left double-click` on it in the viewport, or via the Annotations tab in the left panel. Then select the Brush tool from the toolbar, and use `Alt+Left click` (on Windows and macOS) or `Alt+Win+Left click` (on Linux) to subtract from the annotation. Using `Left click` will simply add to the annotation instead.
 
-When doing this step, you may want to look at some other channel than the DAPI, for example the Autofluorescence channel.
+When performing this step, you may want to look at some other channel than the DAPI, for example the Autofluorescence channel.
 
 ![](images/screenshot_freehand2.png?raw=true "Screenshot")
 
@@ -76,7 +76,7 @@ Apply the new classifier on the cells. Note how this will overwrite the previous
 
 ### Applying a trained classifier on a different image
 
-In the `Project` tab in the left panel, open the second image (the one you did not use for training) for the project. Repeat the steps above for doing core annotation and cell segmentation, and then try each of the trained classifiers on the cells in this image and compare with the results you got on the first image. 
+In the `Project` tab in the left panel, open the second image (the one you did not use for training) for the project. Repeat the steps above for core annotation and cell segmentation, and then try each of the trained classifiers on the cells in this image and compare with the results you got on the first image.
 
 ### Feature normalization (optional)
 
