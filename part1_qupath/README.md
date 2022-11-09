@@ -62,6 +62,10 @@ Note: if you did not install the StarDist extension prior to creating your proje
 
 TODO
 
+![](images/screenshot_classes1.png?raw=true "Screenshot")
+
+![](images/screenshot_classes2.png?raw=true "Screenshot")
+
 `Menu->View->Cell display->Cell boundaries only`
 
 ![](images/screenshot_singleclass1.png?raw=true "Screenshot")
@@ -80,7 +84,7 @@ TODO
 
 After training the Glioma classifier in the previous step, you should now create and train a second classifier for a different cell type. According to the signature matrix, the Oligodendrocyte cell type should be expressed in the Opal 620 (MBP) channel. Make two new classes named Oligo and Not-Oligo, and repeat the steps of creating annotation points for training for each class. Now train a classifier for the new cell type on the Opal 620 feature measurements.
 
-Apply the new classifier on the cells. Note how this will overwrite the previous Glioma/Not-Glioma classification! To combine multiple classifiers in QuPath, select the detected cells again, go to `Menu->Classify->Object classification->Load object classifier`, then select (using `Ctrl+Left click`) both classifiers in the list and click `Apply classifier sequentially`. Each cell should now be assigned both a Glioma/Not-Glioma class and an Oligo/Not-Oligo class.
+Apply the new classifier on the cells. Note how this will overwrite the previous Glioma/Not-Glioma classification! To combine multiple classifiers in QuPath, go to `Menu->Classify->Object classification->Load object classifier`, then select (using `Ctrl+Left click`) both classifiers in the list and click `Apply classifier sequentially`. Each cell should now be assigned both a Glioma/Not-Glioma class and an Oligo/Not-Oligo class.
 
 ![](images/screenshot_multiclass1.png?raw=true "Screenshot")
 
