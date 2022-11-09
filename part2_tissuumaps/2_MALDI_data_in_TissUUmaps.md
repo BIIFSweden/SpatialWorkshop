@@ -1,4 +1,4 @@
-# Using TissUUmaps for exploring ISS data
+# Load and look at MALDI data in TissUUmaps
 By Christophe Avenel
 
 ## Data
