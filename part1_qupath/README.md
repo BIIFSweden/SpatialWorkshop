@@ -60,11 +60,13 @@ Note: if you did not install the StarDist extension prior to creating your proje
 
 ### Training an object classifier
 
-TODO
+According to the signature matrix (see the file `signature_matrix.png` included in the dataset), the Glioma cell type should be expressed in the Opal 650 (mutIDH1) channel. To create a classifier for this cell type, first go to the Annotations tab in the left panel, and remove the existing default classes. Then add two new classes, one called Glioma and the other Not-Glioma, that should indicate if a cell is positive or negative for the cell type.
 
 ![](images/screenshot_classes1.png?raw=true "Screenshot")
 
 ![](images/screenshot_classes2.png?raw=true "Screenshot")
+
+Next step is to add annotation points for training, on top of segmented cells. First switch to the Opal 650 channel in the viewport, to see where the marker is expressed. Select the Points tool from the toolbar, and press the `Add` button to start adding a few points for cells where the marker is expressed (have higher intensity). Assign these points the class Glioma. Now repeat this step for cells where the marker is not expressed, for the Not-Glioma class. To better see the intensities, you may want to show the cell boundaries without the nuclei, via
 
 `Menu->View->Cell display->Cell boundaries only`
 
