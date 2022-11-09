@@ -62,7 +62,19 @@ Note: if you did not install the StarDist extension prior to creating your proje
 
 TODO
 
+`Menu->View->Cell display->Cell boundaries only`
+
+![](images/screenshot_singleclass1.png?raw=true "Screenshot")
+
 ![](images/screenshot_singleclass2.png?raw=true "Screenshot")
+
+![](images/screenshot_singleclass3.png?raw=true "Screenshot")
+
+![](images/screenshot_singleclass4.png?raw=true "Screenshot")
+
+![](images/screenshot_singleclass5.png?raw=true "Screenshot")
+
+![](images/screenshot_singleclass6.png?raw=true "Screenshot")
 
 ### Training multiple object classifiers
 
