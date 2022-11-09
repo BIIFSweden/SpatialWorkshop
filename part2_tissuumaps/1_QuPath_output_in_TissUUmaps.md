@@ -2,6 +2,7 @@
 By Andrea Behanova
 
 ## Data
+- TissUUmaps project: `.tmap` file containing all 10 TMA channels.
 - Images: 10 channels of one image core (TMA core, .tif)
 - Markers: GT from Lina, classification from QuPath (.csv)
 - Regions: Geojson masks from QuPath  (.json)
@@ -10,11 +11,15 @@ In case something is not clear you can always search for help in our documentati
 
 ## General
 1. Install TissUUmaps: https://tissuumaps.github.io/download/.
-1. Load all 10 image channels into TissUUmaps. You can do it by dragging and dropping 10 individual .tif image files into TissUUmaps space. They will be listed in the tab Image layers.
-1. Now load the output .csv file from QuPath by clicking on tab Markers, clicking the plus sign, selecting the desired file from your computer under the section File and coordinates - Choose file.
+1. Load all 10 image channels into TissUUmaps. You can do it by dragging and dropping 10 individual `.tif` image files into TissUUmaps space, or by loading the `.tmap` file directly. All layers will be listed in the tab Image layers.
+
+    
+    ![](images/TMA_layers.png?raw=true "TMA layers")
+
+1. Now load the output .csv file from QuPath by clicking on tab Markers, clicking the plus sign, selecting the desired file from your computer under the section **File and coordinates - Choose file**.
 1. You can change the Tab name to any desired name, then you need to select the column names from the .csv file corresponding to the X and Y coordinates.
-1. In the section Render options, you can define a key to group by, that is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the marker.
-1. Click the *Update View* button.
+1. In the section **Render options**, you can define a key to group by, that is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the marker.
+1. Click the **[Update View]** button.
 1. Now you can explore the classification results in form of the markers in the spatial view, you can zoom in or zoom out, select which groups should be displayed, etc.
 1. To load the segmentation results from QuPath, you need to go to the tab Regions and press Import -> Choose File -> select the desired file from your computer and press the button Import.
 1. All the segmentation regions are displayed on top of the image and you can fill them by clicking the check box next to the regions, or you can just fill all regions by clicking the button Fill all regions. Selected regions can also be analyzed by clicking the button Analyze group meaning displaying a list of all the marker keys with their counts inside that region (expression).
@@ -23,13 +28,13 @@ In case something is not clear you can always search for help in our documentati
 
 ## Classification comparison:
 1. Open TissUUmaps.
-1. Load all 10 image channels into TissUUmaps. You can do it by dragging and dropping 10 individual .tif image files into TissUUmaps space. They will be listed in the tab Image layers.
+1. Load all 10 image channels into TissUUmaps. You can do it by dragging and dropping 10 individual `.tif` image files into TissUUmaps space, or by loading the `.tmap` file directly. All layers will be listed in the tab Image layers.
 1. Now load the output .csv file from QuPath by clicking on tab Markers, clicking the plus sign, selecting the desired file from your computer under the section File and coordinates - Choose file.
 1. You can change the Tab name to any desired name, then you need to select the column names from the .csv file corresponding to the X and Y coordinates.
 1. In the section Render options, you can define a key to group by, that is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the marker.
-1. Click the Update View button.
+1. Click the **[Update View]** button.
 1. Now repeat steps 3-6 but for the ground truth file (file name) containing manual annotations.
-1. Save the project as a .tmap file by opening the menu File -> Save project. In order to save the project together with the .csv file, it is necessary to generate a button first. A warning window appears and you need to generate the button. The path to the .csv file needs to be relative to the path of the image.
+1. Save the project as a `.tmap` file by opening the menu File -> Save project. In order to save the project together with the .csv file, it is necessary to generate a button first. A warning window appears and you need to generate the button. The path to the .csv file needs to be relative to the path of the image.
 1. Then you select a suitable directory to save the project and write the project file name, i.e. My_project**.tmap**, and the project is saved.
 1. Open the plugin ClassV&QC by clicking the menu Plugins -> ClassQC.
 1. In the plugin’s pop-up menu Select marker Dataset 1 - select the ground truth dataset, in the pop-up menu Select column of Dataset 1 - select the column of Dataset 1 containing the classification results, in the pop-up menu Select marker Dataset 2 - select the dataset resulting from QuPath, in the pop-up menu Select column of Dataset 2 - select the column of Dataset 2 containing the classification results.
@@ -42,7 +47,7 @@ In case something is not clear you can always search for help in our documentati
 1. You can change the Tab name to any desired name, then you need to select the column names from the .csv file corresponding to the X and Y coordinates.
 1. In the section Render options, you can define a key to group by, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the marker.
 1. Click the Update View button.
-1. Save the project as a .tmap file by opening the menu File -> Save project. In order to save the project together with the .csv file, it is necessary to generate a button first. A warning window appears and you need to generate the button. The path to the .csv file needs to be relative to the path of the image.
+1. Save the project as a `.tmap` file by opening the menu File -> Save project. In order to save the project together with the .csv file, it is necessary to generate a button first. A warning window appears and you need to generate the button. The path to the .csv file needs to be relative to the path of the image.
 1. Then you select a suitable directory to save the project and write the project file name, i.e. My_project**.tmap**, and the project is saved.
 1. Open the plugin InteractionV&QC by clicking the menu Plugins -> InteractionQC.
 1. Next, we want to calculate the neighborhood enrichment test (NET) and save the results as a .csv file: Open the following Google Colab link: https://colab.research.google.com/drive/1KN9hkFp_ZpJcB4jQxajHlHNHbMe0Ts4N?usp=sharing and copy the notebook to your drive by clicking File -> Save a copy in Drive. Now the notebook has been copied to your Google Drive.
