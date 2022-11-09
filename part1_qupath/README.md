@@ -1,5 +1,7 @@
 # QuPath instructions for workshop
 
+By Fredrik Nysjö
+
 ## Creating a new QuPath project
 
 Go to `Menu->File->Project->Create project`. This will ask you to create a new folder for the project, where any non-image data (annotations, trained classifiers, detections, etc.) will be stored.
