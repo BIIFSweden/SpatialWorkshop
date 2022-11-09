@@ -19,3 +19,5 @@ By Christophe Avenel
     ![](images/maldi_advanced_options.png?raw=true "MALDI advanced options")
 1. Click **[Update view]** again.
 1. In **Render Options**, change the value in the `Select color column` dropdown to display different layers. Don't forget to press the **[Update view]** button after changing the value.
+
+You can test an online version of TissUUmaps to see how a project can be shared: https://tissuumaps.scilifelab.se/private/Christophe/massspec/project.tmap
