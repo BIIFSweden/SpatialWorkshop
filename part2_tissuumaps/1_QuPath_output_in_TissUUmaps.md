@@ -28,8 +28,8 @@ In case something is not clear you can always search for help in our documentati
 
 ## Classification comparison:
 
-> **Note**
-> To simplify saving TissUUmaps projects, try to keep all files (`.tif` and `.csv`) used in a common project inside one folder.
+> **Note**  
+> To simplify saving TissUUmaps projects, always keep all files used in a common project (`.tif` and `.csv`) inside one folder.
 
 1. Open TissUUmaps.
 1. Load all 10 image channels into TissUUmaps (from folder dataset_1_tma_cores/LGG_TMA_5_2_channels). You can do it by dragging and dropping 10 individual `.tif` image files into TissUUmaps space, or by loading the `LGG_TMA_5_2.tmap` file directly. All layers will be listed in the tab Image layers.
@@ -51,8 +51,8 @@ In case something is not clear you can always search for help in our documentati
 
 ## Interaction:
 
-> **Note**
-> To simplify saving TissUUmaps projects, try to keep all files (`.tif` and `.csv`) used in a common project inside one folder.
+> **Note**  
+> To simplify saving TissUUmaps projects, always keep all files used in a common project (`.tif` and `.csv`) inside one folder.
 
 1. Open TissUUmaps.
 1. Load a DAPI image. You can do it by dragging and dropping the .tif image file into TissUUmaps space.
