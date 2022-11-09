@@ -15,6 +15,7 @@ By Christophe Avenel
 1. In **Render Options**, select `Color by marker` option, and chose one of the field in the `Select color column` dropdown.
 1. Choose a color map (for example: `Turbo`) from the `Color map` dropdown
 1. In **Advanced Options**, change the marker size factor to `3.3`, then select `Use a fixed shape` with the `square` option, and check `Remove outline` from the **Marker shape** section:
+    
     ![](images/maldi_advanced_options.png?raw=true "MALDI advanced options")
 1. Click **[Update view]** again.
 1. In **Render Options**, change the value in the `Select color column` dropdown to display different layers. Don't forget to press the **[Update view]** button after changing the value.
