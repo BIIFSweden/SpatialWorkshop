@@ -2,6 +2,12 @@
 
 By Fredrik Nysjö
 
+## Data
+
+- Folder: `dataset_1_tma_cores/`
+- Images: `LGG TMA 5_2_Core[1,10,B]...data.tif` and `LGG TMA 7_2_Core[1,1,E]...data.tif`
+- Signature matrix: `signature_matrix.png`
+
 ## Creating a new QuPath project
 
 Go to `Menu->File->Project->Create project`. This will ask you to create a new folder for the project, where any non-image data (annotations, trained classifiers, detections, etc.) will be stored.
