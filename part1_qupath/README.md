@@ -72,9 +72,9 @@ Next step is to add annotation points for training, on top of segmented cells. F
 
 ![](images/screenshot_singleclass1.png?raw=true "Screenshot")
 
-The last step is to now train a new classifier. Go to `Menu->Classify->Object classification->Train object classifier`. Follow the screenshots below to select a classifier method and which features and classes that should be used. Also select to use the points you created for the training. After pressing `Live update` and inspecting the result, give the classifier the name Glioma and press `Save`. 
-
 ![](images/screenshot_singleclass2.png?raw=true "Screenshot")
+
+The last step is to now train a new classifier. Go to `Menu->Classify->Object classification->Train object classifier`. Follow the screenshots below to select a classifier method and which features and classes that should be used. Also select to use the points you created for the training. After pressing `Live update` and inspecting the result, give the classifier the name Glioma and press `Save`. 
 
 ![](images/screenshot_singleclass3.png?raw=true "Screenshot")
 
