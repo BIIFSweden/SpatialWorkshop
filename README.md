@@ -17,7 +17,7 @@ The workshop will consist of short introductory lectures and hands-on work on th
 
 **12.00-13.00** Lunch
 
-**13.00-13.30** Intro to TissUUmaps (Christophe)  
+**13.00-13.30** [Intro to TissUUmaps](part2_tissuumaps/TissUUmaps_overview.pdf) (Christophe)  
 **13.30-14.00** [Viewing QuPath output in TissUUmaps, and QC](part2_tissuumaps/1_QuPath_output_in_TissUUmaps.md) (Andrea)
 
 Break to move to Gamma 7 (14.00-17.00) (Exact room will be announced)
