@@ -12,7 +12,7 @@ For the new project, in the `Project` tab in the left panel, click on `Add image
 
 ### Displaying individual image channels
 
-Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autofluorescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar to toggle only the DAPI channel in the viewport:
+Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autofluorescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar to make only the DAPI channel visible in the viewport:
 
 ![](images/screenshot_brightness_contrast1.png?raw=true "Screenshot")
 
@@ -20,7 +20,7 @@ Each image in the dataset contains image data for a single tissue-micro array (T
 
 ### Basic annotation drawing
 
-To annotate which region in the core image that should be used for the cell segmentation and classification, use the Ellipse tool from the toolbar to draw a circle like in the screenshot:
+To annotate which region in the core image that should be used for the cell segmentation and classification, use the Ellipse tool from the toolbar to draw a circle, like in the screenshot:
 
 ![](images/screenshot_annotation1.png?raw=true "Screenshot")
 
@@ -34,7 +34,7 @@ The Brush tool in QuPath can be used to further refine an annotation to, for ins
 
 To try this, make sure the annotation for the core is selected (is highlighted in yellow); you can select an annotation by `Left double-click` on it in the viewport, or via the Annotations tab in the left panel. Then select the Brush tool from the toolbar, and use `Alt+Left click` (on Windows and macOS) or `Alt+Win+Left click` (on Linux) to subtract from the annotation. Using `Left click` will simply add to the annotation instead.
 
-When performing this step, you may want to look at some other channel than the DAPI, for example the Autofluorescence channel.
+When performing this step, you may want to switch to the Autofluorescence channel (or toggle some of the marker channels) to better see structures in the image.
 
 ![](images/screenshot_freehand2.png?raw=true "Screenshot")
 
@@ -44,7 +44,7 @@ When performing this step, you may want to look at some other channel than the D
 
 ### Using the built-in QuPath cell detection
 
-To segment the cells in the image, switch back to the DAPI channel, and make sure the annotation you created for the core is selected. Go to `Menu->Analyze->Cell detection->Cell detection`, and try segmenting the cells first with the default settings from the first screenshot below. Change the settings (threshold value and cell expansion) to the ones in the second screenshot, before pressing "Run" again to repeat the segmentation.
+To segment the cells in the image, switch back to the DAPI channel, and make sure the annotation you created for the core is selected. Go to `Menu->Analyze->Cell detection->Cell detection`, and try first to segment the cells with the default settings from the first screenshot below. Then change the settings (threshold value and cell expansion) to the ones in the second screenshot, before pressing "Run" again to repeat the segmentation.
 
 ![](images/screenshot_cell_seg1.png?raw=true "Screenshot")
 
@@ -86,7 +86,7 @@ TODO
 
 ### As GeoJSON (with cells exported as polygonal regions)
 
-Go to `Menu->Objects->Select->Select detections->Select cells` to first select all the cells in the open image, and then go to `Menu->File->Object data->Export as GeoJSON` and make sure you are using the options in the screenshot below to only export selected objects (i.e., the cells). Repeat this step for each image, and name the exported files 5_10_B.geojson and 7_1_E.geojson (or similar).
+Go to `Menu->Objects->Select->Select detections->Select cells` to first select all the cells in the open image, and then go to `Menu->File->Object data->Export as GeoJSON` and make sure you are using the options in the screenshot below to export only selected objects (i.e., the cells). Repeat this step for each image, and name the exported files 5_10_B.geojson and 7_1_E.geojson (or similar).
 
 ![](images/screenshot_export_geojson.png?raw=true "Screenshot")
 
