@@ -20,7 +20,7 @@ For the new project, in the `Project` tab in the left panel, click on `Add image
 
 ### Displaying individual image channels
 
-Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autofluorescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar to make only the DAPI channel visible in the viewport:
+Each image in the dataset contains image data for a single tissue-micro array (TMA) core with 10 channels (8 Opal marker channels + DAPI + an autofluorescent channel). Open the image for the first core (5_10_B), and use the Brightness & contrast tool from the toolbar (looks like a half-moon)to make only the DAPI channel visible in the viewport:
 
 ![](images/screenshot_brightness_contrast1.png?raw=true "Screenshot")
 
